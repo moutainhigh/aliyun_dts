@@ -1,0 +1,30 @@
+[
+  {
+    "from_db": "zyk_pep_cn",
+    "from_table": "zyk_resource",
+    "to_entity": "com.pep.canal.entity.ZykPepCnResource",
+    "all_field_mapping": true,
+    "to_topic": "zyk_pep_cn_resource"
+  },
+  {
+    "from_db": "zyk_pep_cn",
+    "from_table": "zyk_attach",
+    "to_entity": "com.pep.canal.entity.ZykPepCnAttach",
+    "all_field_mapping": true,
+    "to_topic": "zyk_pep_cn_attach"
+  },
+  {
+  "from_db": "zyk_pep_cn",
+  "from_table": "zyk_file",
+  "to_entity": "com.pep.canal.entity.ZykPepCnFile",
+  "all_field_mapping": true,
+  "to_topic": "zyk_pep_cn_file"
+  },
+  {
+    "from_db": "zyk_pep_cn",
+    "from_table": "zyk_tree",
+    "to_entity": "com.pep.canal.entity.ZykPepCnTree",
+    "all_field_mapping": true,
+    "to_topic": "zyk_pep_cn_tree"
+  }
+]

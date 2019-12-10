@@ -1,0 +1,134 @@
+#测试SQL
+create table ods_order_detail(
+id string,
+app_id string,
+app_order_id string,
+product_id string,
+product_name string,
+price string,
+quantity string,
+type string,
+code string,
+start_time string,
+end_time string,
+beans string,
+materiel_code string,
+materiel_name string
+) partitioned by (count_date string)
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+stored as textfile;
+
+
+
+create table ods_order_info(
+id string,
+app_id string,
+app_order_id string,
+user_id string,
+user_name string,
+sale_channel_id string,
+sale_channel_name string,
+s_state string,
+s_create_time string,
+s_delete_time string,
+order_price string,
+discount string,
+pay_channel string,
+pay_time string,
+pay_price string,
+pay_tradeno string,
+remark string,
+beans string,
+bean_type string,
+coupons string
+) partitioned by (count_date string)
+row format serde 'org.openx.data.jsonserde.JsonSerDe'
+stored as textfile;
+
+
+#线上SQL
+create table ods_order_detail(
+id string,
+app_id string,
+app_order_id string,
+product_id string,
+product_name string,
+price string,
+quantity string,
+type string,
+code string,
+start_time string,
+end_time string,
+beans string,
+materiel_code string,
+materiel_name string
+) partitioned by (count_date string)
+row format serde 'org.apache.hive.hcatalog.data.JsonSerDe'
+stored as textfile;
+
+
+
+create table ods_order_info(
+id string,
+app_id string,
+app_order_id string,
+user_id string,
+user_name string,
+sale_channel_id string,
+sale_channel_name string,
+s_state string,
+s_create_time string,
+s_delete_time string,
+order_price string,
+discount string,
+pay_channel string,
+pay_time string,
+pay_price string,
+pay_tradeno string,
+remark string,
+beans string,
+bean_type string,
+coupons string
+) partitioned by (count_date string)
+row format serde 'org.apache.hive.hcatalog.data.JsonSerDe'
+stored as textfile;
+
+
+create table if not exists ods_jxw_platform_textbook(
+id string,
+user_id string,
+user_name string,
+user_seting string,
+org_id string,
+org_name string,
+edu_code string,
+rkxd string,
+zxxkc string,
+publisher string,
+nj string,
+fascicule string,
+year string,
+keywords string,
+ctree_id string,
+ctree_name string,
+sub_heading string,
+s_state string,
+score string,
+s_version string,
+range_type string,
+ctree_related_object string,
+view_numb string,
+down_numb string,
+s_creator string,
+s_creator_name string,
+s_creator_time string,
+valid_time string,
+authorization_code string,
+authorization_type string,
+authorization_way string,
+end_time string,
+reg_time string,
+row_timestamp string,
+row_status string
+) partitioned by (count_date string)
+row format serde 'org.apache.hive.hcatalog.data.JsonSerDe';

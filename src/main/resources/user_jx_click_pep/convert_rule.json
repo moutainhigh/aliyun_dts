@@ -1,0 +1,20 @@
+[
+  {
+    "from_db": "jx_click",
+    "from_table": "p_user",
+    "to_entity": "com.pep.business.entity.ProductUser",
+    "all_field_mapping": true,
+    "field_default": {
+      "product_id": "121301",
+      "company":"pep_click"
+    },
+    "date_format": "yyyy-MM-dd HH:mm:ss",
+    "date2timestamp": {
+      "s_create_time": "first_access_time"
+    },
+    "field_copy": {
+      "first_access_time": "last_access_time"
+    },
+    "to_topic": "product_user"
+  }
+]

@@ -1,0 +1,35 @@
+bin/kafka-topics.sh --create --zookeeper 192.168.186.32:2181,192.168.186.33:2181,192.168.186.34:2181/kafka --replication-factor 3 --partitions 3 --topic product_user
+
+bin/kafka-topics.sh --create --zookeeper 172.30.0.7:2181,172.30.0.8:2181,172.30.0.10:2181/kafka --replication-factor 3 --partitions 3 --topic product_user
+
+bin/kafka-topics.sh --create --zookeeper 192.168.186.32:2181,192.168.186.33:2181,192.168.186.34:2181/kafka --replication-factor 3 --partitions 3 --topic order_info
+
+bin/kafka-topics.sh --create --zookeeper 192.168.186.32:2181,192.168.186.33:2181,192.168.186.34:2181/kafka --replication-factor 3 --partitions 3 --topic order_detail
+
+bin/kafka-topics.sh --create --zookeeper 172.30.0.7:2181,172.30.0.8:2181,172.30.0.10:2181/kafka --replication-factor 3 --partitions 3 --topic order_info
+
+bin/kafka-topics.sh --create --zookeeper 172.30.0.7:2181,172.30.0.8:2181,172.30.0.10:2181/kafka --replication-factor 3 --partitions 3 --topic order_detail
+
+bin/kafka-topics.sh --create --zookeeper 192.168.186.32:2181,192.168.186.33:2181,192.168.186.34:2181/kafka --replication-factor 3 --partitions 3 --topic jxw_platform_p_textbook
+
+bin/kafka-topics.sh --create --zookeeper 172.30.0.7:2181,172.30.0.8:2181,172.30.0.10:2181/kafka --replication-factor 3 --partitions 3 --topic jxw_platform_p_textbook
+
+bin/kafka-topics.sh --create --zookeeper 192.168.186.32:2181,192.168.186.33:2181,192.168.186.34:2181/kafka --replication-factor 3 --partitions 3 --topic jxw_platform_p_resource
+
+bin/kafka-topics.sh --create --zookeeper 172.30.0.7:2181,172.30.0.8:2181,172.30.0.10:2181/kafka --replication-factor 3 --partitions 3 --topic jxw_platform_p_resource
+
+bin/kafka-topics.sh --create --zookeeper 192.168.186.32:2181,192.168.186.33:2181,192.168.186.34:2181/kafka --replication-factor 3 --partitions 3 --topic zyk_pep_cn_resource
+
+bin/kafka-topics.sh --create --zookeeper 172.30.0.7:2181,172.30.0.8:2181,172.30.0.10:2181/kafka --replication-factor 3 --partitions 3 --topic zyk_pep_cn_resource
+
+bin/kafka-topics.sh --create --zookeeper 192.168.186.32:2181,192.168.186.33:2181,192.168.186.34:2181/kafka --replication-factor 3 --partitions 3 --topic zyk_pep_cn_attach
+
+bin/kafka-topics.sh --create --zookeeper 172.30.0.7:2181,172.30.0.8:2181,172.30.0.10:2181/kafka --replication-factor 3 --partitions 3 --topic zyk_pep_cn_attach
+
+bin/kafka-topics.sh --create --zookeeper 192.168.186.32:2181,192.168.186.33:2181,192.168.186.34:2181/kafka --replication-factor 3 --partitions 3 --topic zyk_pep_cn_file
+
+bin/kafka-topics.sh --create --zookeeper 172.30.0.7:2181,172.30.0.8:2181,172.30.0.10:2181/kafka --replication-factor 3 --partitions 3 --topic zyk_pep_cn_file
+
+bin/kafka-topics.sh --create --zookeeper 192.168.186.32:2181,192.168.186.33:2181,192.168.186.34:2181/kafka --replication-factor 3 --partitions 3 --topic zyk_pep_cn_tree
+
+bin/kafka-topics.sh --create --zookeeper 172.30.0.7:2181,172.30.0.8:2181,172.30.0.10:2181/kafka --replication-factor 3 --partitions 3 --topic zyk_pep_cn_tree

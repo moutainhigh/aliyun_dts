@@ -1,0 +1,58 @@
+[
+  {
+    "from_db": "jxw_s101_order",
+    "from_table": "p_order_info_2019",
+    "to_entity": "com.pep.business.entity.OrderInfo",
+    "field_mapping": {
+      "id":"id",
+      "app_id":"app_id",
+      "app_order_id":"app_order_id",
+      "user_id":"user_id",
+      "user_name":"user_name",
+      "sale_channel_id":"sale_channel_id",
+      "sale_channel_name":"sale_channel_name",
+      "s_state":"s_state",
+      "order_price":"order_price",
+      "discount":"discount",
+      "pay_channel":"pay_channel",
+      "pay_price":"pay_price",
+      "pay_tradeno":"pay_tradeno",
+      "remark":"remark",
+      "beans":"beans",
+      "bean_type":"bean_type",
+      "coupons":"coupons",
+      "pay_time":"pay_time",
+      "s_create_time":"s_create_time",
+      "s_delete_time":"s_delete_time",
+      "row_timestamp":"row_timestamp",
+      "row_status":"row_status"
+
+    },
+    "date_format": "yyyy-MM-dd HH:mm:ss",
+    "to_topic": "order_info"
+  },
+  {
+    "from_db": "jxw_s101_order",
+    "from_table": "p_order_detail_2019",
+    "to_entity": "com.pep.business.entity.OrderDetail",
+    "field_mapping": {
+      "id":"id",
+      "app_id":"app_id",
+      "app_order_id":"app_order_id",
+      "product_id":"product_id",
+      "product_name":"product_name",
+      "price":"price",
+      "quantity":"quantity",
+      "code":"code",
+      "beans":"beans",
+      "materiel_code":"materiel_code",
+      "materiel_name":"materiel_name",
+      "start_time":"start_time",
+      "end_time":"end_time",
+      "row_timestamp":"row_timestamp",
+      "row_status":"row_status"
+    },
+    "date_format": "yyyy-MM-dd HH:mm:ss",
+    "to_topic": "order_detail"
+  }
+]

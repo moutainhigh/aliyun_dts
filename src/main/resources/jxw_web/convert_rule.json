@@ -1,0 +1,24 @@
+[
+  {
+    "from_db": "jxw_web",
+    "from_table": "a_user",
+    "to_entity": "com.pep.business.entity.ProductUser",
+    "all_field_mapping": true,
+    "field_default": {
+      "product_id": "11120101",
+      "company": "110000006"
+    },
+    "date2timestamp":{
+      "s_create_time":"first_access_time"
+    },
+    "date_format": "yyyy-MM-dd HH:mm:ss",
+    "to_topic": "product_user"
+  },
+  {
+    "from_db": "jxw_web",
+    "from_table": "a_user_ctree_rel",
+    "to_entity": "com.pep.business.entity.Authorization",
+    "all_field_mapping": true,
+    "to_topic": "jxw_ctree_rel"
+  }
+]

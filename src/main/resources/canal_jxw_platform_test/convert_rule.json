@@ -1,0 +1,26 @@
+[
+  {
+    "from_db": "jxw_platform",
+    "from_table": "p_textbook",
+    "to_entity": "com.pep.canal.entity.JxwPlatformTextbook",
+    "all_field_mapping": true,
+    "field_default": {
+      "chapter_json": ""
+    },
+    "to_topic": "jxw_platform_p_textbook"
+  },
+  {
+    "from_db": "jxw_platform",
+    "from_table": "p_resource",
+    "to_entity": "com.pep.canal.entity.JxwPlatformResource",
+    "all_field_mapping": true,
+    "to_topic": "jxw_platform_p_resource"
+  },
+  {
+    "from_db": "canal_test",
+    "from_table": "canal_test1",
+    "to_entity": "com.pep.canal.entity.JxwPlatformResource",
+    "all_field_mapping": true,
+    "to_topic": "test"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "from_db": "jx_click_api",
+    "from_table": "p_user",
+    "to_entity": "com.pep.business.entity.ProductUser",
+    "field_mapping": {
+      "app_key": "company",
+      "user_id": "user_id",
+      "phone": "phone",
+      "row_timestamp": "row_timestamp",
+      "row_status": "row_status"
+    },
+    "field_default": {
+      "product_id": "1213"
+    },
+    "date_format": "yyyy-MM-dd HH:mm:ss",
+    "date2timestamp": {
+      "s_create_time": "first_access_time"
+    },
+    "field_copy": {
+      "first_access_time": "last_access_time"
+    },
+    "to_topic": "product_user"
+  }
+]
